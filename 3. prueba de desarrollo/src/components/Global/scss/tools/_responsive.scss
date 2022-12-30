@@ -1,0 +1,40 @@
+// -------------
+// # responsive
+// -------------
+
+$breakpoints: (
+  xl2: 96rem,
+  xl: 80rem,
+  lg: 64rem,
+  md: 48rem,
+  tc: 44rem,
+  sm: 30rem,
+  xs: 27rem,
+);
+
+@mixin media($min, $max, $not: "") {
+  @if ($min =="min") {
+    @media #{$not} screen and (min-width: $max) {
+      @content;
+    }
+  }
+
+  @else if ($min =="max") {
+    @media #{$not} screen and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @media #{$not} screen and (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+}
+
+// -------------
+// # responsive
+// -------------
+@function mg($key, $map: $breakpoints) {
+  @return map-get($map, $key);
+}

@@ -1,0 +1,16 @@
+.main-logo {
+	flex-grow: 1;
+	display: flex;
+
+	&>* {
+		margin-left: 0%;
+		transition: margin-left 1s ease;
+		will-change: contents;
+
+		:where(.js-side-panel-open) & {
+			transition: margin-left 1s ease;
+			margin-left: 50%;
+			will-change: contents;
+		}
+	}
+}

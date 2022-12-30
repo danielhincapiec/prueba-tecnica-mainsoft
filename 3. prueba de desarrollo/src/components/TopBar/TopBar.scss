@@ -1,0 +1,14 @@
+.top-bar {
+	// border: 2px solid indianred;
+	height: var(--height-topbar);
+	display: flex;
+
+	.container__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.6rem;
+		transition: all 0.3s ease-in-out;
+		// width: 100%;
+	}
+}

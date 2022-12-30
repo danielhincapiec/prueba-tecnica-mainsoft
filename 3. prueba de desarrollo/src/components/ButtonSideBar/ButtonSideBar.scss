@@ -1,0 +1,39 @@
+.button-side-bar {
+	cursor: pointer;
+	width: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	border-radius: 0;
+	background-color: transparent !important;
+	border: 0 none;
+	padding: 0;
+
+	&:hover {
+		line {
+			stroke: var(--ink-1) !important;
+		}
+	}
+
+	&:visited {
+		background-color: transparent !important;
+	}
+
+	&__line {
+		display: block;
+
+		:where(.js-side-panel-open) & {
+			display: none;
+		}
+	}
+
+	&__back {
+		display: none;
+
+		:where(.js-side-panel-open) & {
+			display: block;
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+.input-text {
+
+	&__ui {
+		border: 1px solid transparent !important;
+		padding: 0;
+		font-size: 1.1rem;
+		font-weight: 500;
+		min-height: auto;
+		margin-bottom: 0;
+		padding: 0.2rem 0;
+		font-weight: 500;
+
+		&:hover {
+			border-bottom: 1px solid var(--ink-grey-3) !important;
+		}
+	}
+}

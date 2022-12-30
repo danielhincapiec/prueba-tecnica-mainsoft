@@ -1,0 +1,22 @@
+.main-menu {
+	// border: 2px solid gold;
+	display: flex;
+	flex-direction: column;
+	gap: clamp(1.2rem, 30vh, 3.5rem);
+	padding-left: 0;
+	margin-left: 0;
+	margin-bottom: 3.75rem;
+	margin-left: 1rem;
+
+	&__item {
+		// border: 2px solid lime;
+		display: block;
+
+		a {
+			// border: 2px solid indianred;
+			font-size: 1.3rem;
+			display: block;
+			color: var(--ink-black);
+		}
+	}
+}

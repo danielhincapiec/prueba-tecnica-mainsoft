@@ -1,0 +1,27 @@
+img,
+svg {
+	display: block;
+}
+
+.container {
+	// border: 2px solid indianred;
+	padding-left: var(--window-gap);
+	padding-right: var(--window-gap);
+
+	&--no-gap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&__inner {
+		// border: 2px solid cyan;
+		max-width: var(--width-container);
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
